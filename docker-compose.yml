@@ -1,0 +1,12 @@
+# Operation Vulnex — DVWA target for an isolated, authorized pentest lab.
+# Bring it up with:  docker compose up -d   (or run scripts/00-setup.sh)
+# Then open http://localhost:42080  → login admin / password → Create / Reset Database.
+services:
+  dvwa:
+    image: vulnerables/web-dvwa:latest
+    container_name: dvwa
+    ports:
+      - "42080:80"
+    restart: unless-stopped
+# This single image bundles Apache + PHP + MySQL for convenience.
+# Keep this lab OFF any production/real network. See lab/ for the full manual.

@@ -1,0 +1,16 @@
+# Student-facing manuals live in Teams/Notion, not in this repo.
+lab/
+
+# Not a Claude Code project — keep the agent instructions out of the repo.
+CLAUDE.md
+
+# Local config and run artifacts.
+lab.env
+out/
+out_users.txt
+*.log
+.msfhome/
+wordlists/*.txt.bak
+
+# OS cruft
+.DS_Store
